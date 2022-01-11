@@ -12,21 +12,22 @@ import Preloader from "../components/preloader/preloader";
 import Services from "../components/services/services";
 
 export default function Home () {
- return(
+  return (
     <>
-    <Preloader/>
-      <Header/>
+      <Preloader />
+      <Header />
 
-    <Work />
-    <Howitworks/>
-    <Services/>
-    <Badges/>
-    <Partners />
-    <About/>
-    <Testimonials />
-    <FAQ />
-    <MobileApp />
-    <Footer/>
+      <Work />
+      <Howitworks />
+      <Services />
+      <Badges />
+      <Partners />
+      <About />
+
+      <Testimonials />
+      <FAQ />
+      <MobileApp />
+      <Footer />
     </>
- )   
+  )
 }

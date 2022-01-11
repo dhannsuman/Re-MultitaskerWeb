@@ -8,28 +8,28 @@ import Instagram from '../../assets/logo/insta.png'
 import Headphones from '../../assets/logo/headphones.png'
 
 export default function Contact () {
-    require( './styles.css')
-    return(
+    require( './styles.css' )
+    return (
         <>
-        <Navbar />
-        <div className="container-fluid contact-us-header-bg">
-            <h1 className="text-white w-100 text-center">Contact Us</h1>
-            <div className="links w-100 text-center">
-                <Link className="text-white" to={{pathname:"/"}}>Home</Link>
-                <span className="mx-2 text-white">/</span>
-                <Link className="text-white" to={{pathname:"/contact"}}>Contact Us</Link>
+            <Navbar />
+            <div className="container-fluid contact-us-header-bg">
+                <h1 className="text-white w-100 text-center">Contact Us</h1>
+                <div className="links w-100 text-center">
+                    <Link className="text-white" to={ { pathname: "/" } }>Home</Link>
+                    <span className="mx-2 text-white">/</span>
+                    <Link className="text-white" to={ { pathname: "/contact" } }>Contact Us</Link>
+                </div>
             </div>
-        </div>
-            <section className="container-fluid sm-bp" style={{background:'#f5f5f5'}}>
+            <section className="container-fluid sm-bp" style={ { background: '#f5f5f5' } }>
                 <div className="sm-no-pad container contact-body">
                     <div className="left mx-2">
                         <h3 className="mb-3 head">Get In Touch</h3>
-                        <p>At Multitasker we invite authors and freelancers to take part in this innovative and modern Idea so that we can make it user friendly.</p>
-                        <br />
+                        <p>At Multitasker we invite freelancers to take part in this innovative and
+                            modern idea so that we can make it user friendly.</p>  <br />
                         <ul className="ps-0">
                             <li>
                                 <div className="col-2 d-flex justify-content-center">
-                                    <img className="img-fluid" src={Home} alt="home" />
+                                    <img className="img-fluid" src={ Home } alt="home" />
                                 </div>
                                 <div className="col-10 px-1">
                                     <h3>Locations</h3>
@@ -38,7 +38,7 @@ export default function Contact () {
                             </li>
                             <li>
                                 <div className="col-2 d-flex justify-content-center">
-                                    <img className="img-fluid" src={Email} alt="home" />
+                                    <img className="img-fluid" src={ Email } alt="home" />
                                 </div>
                                 <div className="col-10 px-1">
                                     <h3>Email Address</h3>
@@ -63,7 +63,7 @@ export default function Contact () {
                             </li>
                             <li>
                                 <div className="col-2 d-flex justify-content-center">
-                                    <img className="img-fluid" src={Instagram} alt="home" />
+                                    <img className="img-fluid" src={ Instagram } alt="home" />
                                 </div>
                                 <div className="col-10 px-1">
                                     <h3>Reach us on Instagram</h3>
@@ -80,7 +80,7 @@ export default function Contact () {
                     <div className="right mx-3">
                         <div className="d-flex dropus">
                             <div className="">
-                                <img className="img-fluid my-1" src={Headphones} alt="" />
+                                <img className="img-fluid my-1" src={ Headphones } alt="" />
                             </div>
                             <div className="col-10 px-1">
                                 <h3 className="head">Drop Us a Line</h3>
@@ -123,25 +123,24 @@ export default function Contact () {
                     </div>
                 </div>
             </section>
-        <div className="gst-Container container">
-            <div className="gst bg-white">
-                <div className="content-Container">
-                    <h3>Get Started Today</h3>
-                    <p>
-                    To hire a tasker, register and post your task. To become a tasker, register and find a job today.
-                    </p>
-                </div>
-                <div className="btn-Container">
-                    <a href="/" className="contact-BTN ms-2 my-2 text-white">Get Started</a>
+            <div className="gst-Container container">
+                <div className="gst bg-white">
+                    <div className="content-Container">
+                        <h3>Get Started Today</h3>
+                        <p>
+                            To hire a tasker, register and post your task. To become a tasker, register and find a job today.
+                        </p>
+                    </div>
+                    <div className="btn-Container">
+                        <a href="/#mobile" className="contact-BTN ms-2 my-2 text-white">Get Started</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className="contact-footer" />
-        
+
             <Footer />
 
 
         </>
     )
-    
+
 }

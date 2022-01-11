@@ -28,7 +28,7 @@ export default function Partners () {
     return (
         <>
             <section className="section">
-                <div className="container">
+                <div className="container" style={ { borderTop: 'solid 2px green', paddingTop: '50px' } }>
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <div className="center-heading">
@@ -47,11 +47,11 @@ export default function Partners () {
                                     </Slider>
                                 </section>
                             </div>
-                            
-                                   
-                            </div>
+
+
                         </div>
                     </div>
+                </div>
             </section>
         </>
     )

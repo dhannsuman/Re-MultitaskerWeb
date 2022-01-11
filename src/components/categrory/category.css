@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.container .main_header {
-  padding-top: 10%;
+.container {
+  padding: 0 !important;
 }
 .container .main_header__title {
   position: relative;
@@ -49,8 +49,9 @@ body {
 .container .box img, .container .add_box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
+  padding: 50px;
 }
 .container .box .box__title, .container .add_box .box__title {
   position: absolute;
@@ -67,7 +68,7 @@ body {
 .container .box .box__title p, .container .add_box .box__title p {
   opacity: 0;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.5em;
   margin: 0;
   transition-delay: 0.2s;
   transition: 0.2s;
@@ -77,7 +78,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 7% 0 0 0;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 .container .add_box {
   background-color: #f9f9f9;
@@ -106,4 +107,30 @@ body {
 }
 .container .add_box a:hover svg {
   margin-top: 21.5%;
+}
+ #category{
+    padding: 68px;
+    margin: 68px;
+  }
+@media (max-height: 800px) {
+ #category{
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 50px !important;
+  }
+  .container{
+    padding: 0 !important;
+  }
+  .container .box, .container .add_box {
+    height: 200px !important;
+  }
+  .container .box .box__title, .container .add_box .box__title {
+    height: 25%;
+  }
+  .container .box .box__title p, .container .add_box .box__title p {
+    font-size: 1.2em;
+  }
+  .container .add_box .add_box__title {
+    top: 50%;
+  }
 }

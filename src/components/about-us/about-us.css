@@ -17,3 +17,11 @@
 .quality-1{
     padding-bottom:20px;
 }
+.lottie{
+   display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+    
+}
