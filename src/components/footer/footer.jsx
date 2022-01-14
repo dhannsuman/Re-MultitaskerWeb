@@ -1,6 +1,7 @@
 import './footer.css';
 import React from 'react'
 import Logo from "../../assets/logo/Multitasker-Logo-Final-Black.png";
+import { Link } from "react-router-dom"
 
 export default function Footer () {
     return (
@@ -23,18 +24,18 @@ export default function Footer () {
                     <div class="link-boxes">
                         <ul class="box">
                             <li class="link_name">Company</li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/contact">Contact us</a></li>
-                            <li><a href="/#about">About us</a></li>
-                            <li><a href="/#work">Get started</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/contact">Contact us</Link></li>
+                            <li><Link to="/#about">About us</Link></li>
+                            <li><Link to="/#work">Get started</Link></li>
                         </ul>
                         <ul class="box">
                             <li class="link_name">Services</li>
-                            <li><a href="/category">Graphic design</a></li>
-                            <li><a href="/category">Handyman</a></li>
-                            <li><a href="/category">Plumbing</a></li>
-                            <li><a href="/category">Landscaper</a></li>
-                            <li><a href="/category">And Many More</a></li>
+                            <li><Link to="/category">Graphic design</Link></li>
+                            <li><Link to="/category">Handyman</Link></li>
+                            <li><Link to="/category">Plumbing</Link></li>
+                            <li><Link to="/category">Landscaper</Link></li>
+                            <li><Link to="/category">And Many More</Link></li>
 
                         </ul>
                         <div className="center-heading col-lg-6" >
@@ -49,8 +50,8 @@ export default function Footer () {
                     <div class="bottom_text">
                         <span class="copyright_text">Copyright © 2021 <a href="#">Multitasker.</a>All rights reserved</span>
                         <span class="policy_terms">
-                            <a href="/terms-and-conditions">Privacy policy</a>
-                            <a href="/terms-and-conditions">Terms & condition</a>
+                            <Link to="/terms-and-conditions">Privacy policy</Link>
+                            <Link to="/terms-and-conditions">Terms & condition</Link>
                         </span>
                     </div>
                 </div>

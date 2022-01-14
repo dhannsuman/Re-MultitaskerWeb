@@ -1,5 +1,6 @@
 import './work.css';
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom"
 
 
 export default function Work () {
@@ -55,8 +56,7 @@ export default function Work () {
                     <p>Graphic</p>
                     <img src="https://cdn-icons-png.flaticon.com/512/1320/1320477.png" alt="Some Architecture Picture" />
                     <p>Security</p>
-
-                    <a href="/category" className="arrow-btn">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+                    <Link to="/category" className="arrow-btn">LEARN MORE <i class="fas fa-arrow-right"></i></Link>
                 </div>
 
             </section>
