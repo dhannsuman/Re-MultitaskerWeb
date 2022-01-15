@@ -37,7 +37,7 @@ export default function Work () {
                     <h6>Security</h6>
 
                 </div>
-                <a href="/category" className="arrow">LEARN MORE <i class="fas fa-arrow-right"></i></a>
+                <Link to="/category" className="arrow">LEARN MORE <i class="fas fa-arrow-right"></i></Link>
 
                 <div className="brute-css">
                     <img src="https://cdn-icons-png.flaticon.com/512/3899/3899147.png" alt="Some Tech Picture" />
